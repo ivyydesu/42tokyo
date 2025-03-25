@@ -6,24 +6,23 @@
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 15:09:50 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/21 12:09:09 by kaoki            ###   ########.fr       */
+/*   Updated: 2025/03/23 09:58:08 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int	i;
+	char	*ret;
 
-	i = 0;
+	ret = dest;
 	while (*src)
 	{
 		*dest = *src;
-		src++;
 		dest++;
-		i++;
+		src++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	*dest = '\0';
+	return (ret);
 }
 
 // #include <stdio.h>
