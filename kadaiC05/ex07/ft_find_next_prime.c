@@ -6,7 +6,7 @@
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 12:24:18 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/28 12:01:03 by kaoki            ###   ########.fr       */
+/*   Updated: 2025/03/28 14:37:28 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,3 @@ int	ft_find_next_prime(int nb)
 // 	printf("Next prime of 9: %d\n", ft_find_next_prime(9));
 // 	return (0);
 // }
-//アルゴリズムが難しいから必要であれば75使って解説
