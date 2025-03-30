@@ -6,7 +6,7 @@
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 10:18:10 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/28 10:28:17 by kaoki            ###   ########.fr       */
+/*   Updated: 2025/03/30 11:26:51 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 
 int	main(int argc, char **argv)
 {
-	int	i;
 	int	j;
 
-	i = 0;
 	j = 0;
-	while (i < argc)
+	while (argv[0][j] != '\0')
 	{
-		write(1, &argv[i][j], sizeof(argv[i]) - 1);
-		i++;
+		write(1, &argv[0][j], 1);
 		j++;
 	}
 	write(1, "\n", 1);

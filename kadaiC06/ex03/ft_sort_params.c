@@ -6,7 +6,7 @@
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 16:27:35 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/28 17:11:44 by kaoki            ###   ########.fr       */
+/*   Updated: 2025/03/30 11:58:57 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ int	main(int argc, char *argv[])
 	while (i < argc)
 	{
 		print_string(argv[i]);
+		write(1, "\n", 1);
 		i++;
 	}
 	return (0);
