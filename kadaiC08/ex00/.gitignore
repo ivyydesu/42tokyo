@@ -1,0 +1,36 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   .gitignore.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/30 18:32:17 by kaoki             #+#    #+#             */
+/*   Updated: 2025/03/30 18:43:47 by kaoki            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "ft.h"
+#include <stdio.h>
+
+int	main(void)
+{
+	int	a;
+
+	a = 5, b;
+	// ft_putchar のテスト
+	ft_putchar('H');
+	ft_putchar('i');
+	ft_putchar('\n');
+	// ft_putstr のテスト
+	ft_putstr("Hello, world!\n");
+	// ft_strlen のテスト
+	printf("Len: %d\n", ft_strlen("Hello, world!"));
+	// ft_strcmp のテスト
+	printf("S: %d\n", ft_strcmp("Hello", "Hello, world!"));
+	// ft_swap のテスト
+	a = 5, b = 10;
+	ft_swap(&a, &b);
+	printf("a: %d, b: %d\n", a, b);
+	return (0);
+}
