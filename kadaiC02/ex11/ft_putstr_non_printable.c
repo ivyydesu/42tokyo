@@ -1,28 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/26 10:18:10 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/30 17:53:14 by kaoki            ###   ########.fr       */
+/*   Created: 2025/03/30 19:26:32 by kaoki             #+#    #+#             */
+/*   Updated: 2025/04/01 08:59:01 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	main(int argc, char **argv)
+void	ft_putstr_non_printable(char *str)
 {
-	int	j;
+	char	*hex;
 
-	(void)argc;
-	j = 0;
-	while (argv[0][j] != '\0')
+	hex = "0123456789abcdef";
+	while (*str)
 	{
-		write(1, &argv[0][j], 1);
-		j++;
+		if (*str >= 32 && *str <= 126)
+		{
+			write(1, str, 1);
+		}
+		else
+		{
+			write(1, "\\", 1);
+			write(1, &hex[*str / 16], 1);
+			write(1, &hex[*str % 16], 1);
+		}
+		str++;
 	}
-	write(1, "\n", 1);
+}
+
+int	main(void)
+{
+	char	str[] = "Coucou\ttu vas bien ?";
+
+	ft_putstr_non_printable(str);
 	return (0);
 }

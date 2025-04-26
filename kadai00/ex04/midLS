@@ -1,0 +1,2 @@
+ls -pt | grep -v -E '^\.\.?$' | paste -sd,
+

@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/26 10:18:10 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/30 17:53:14 by kaoki            ###   ########.fr       */
+/*   Created: 2025/04/04 02:17:45 by kaoki             #+#    #+#             */
+/*   Updated: 2025/04/04 02:17:49 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	main(int argc, char **argv)
+void	ft_putstr(char *str)
 {
-	int	j;
-
-	(void)argc;
-	j = 0;
-	while (argv[0][j] != '\0')
+	while (*str)
 	{
-		write(1, &argv[0][j], 1);
-		j++;
+		write(1, str++, 1);
 	}
-	write(1, "\n", 1);
-	return (0);
 }

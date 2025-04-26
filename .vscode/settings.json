@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"unistd.h": "c",
+		"ft_strupcase": "cpp",
+		"stdio.h": "c"
+	}
+}

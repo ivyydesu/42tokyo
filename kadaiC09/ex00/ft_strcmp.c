@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/26 10:18:10 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/30 17:53:14 by kaoki            ###   ########.fr       */
+/*   Created: 2025/04/04 02:18:45 by kaoki             #+#    #+#             */
+/*   Updated: 2025/04/04 02:20:09 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int	main(int argc, char **argv)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int	j;
-
-	(void)argc;
-	j = 0;
-	while (argv[0][j] != '\0')
+	while (*s1 && (*s1 == *s2))
 	{
-		write(1, &argv[0][j], 1);
-		j++;
+		s1++;
+		s2++;
 	}
-	write(1, "\n", 1);
-	return (0);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

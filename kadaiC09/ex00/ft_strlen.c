@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/24 12:27:18 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/25 15:23:55 by kaoki            ###   ########.fr       */
+/*   Created: 2025/04/04 02:18:12 by kaoki             #+#    #+#             */
+/*   Updated: 2025/04/04 02:18:12 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
-	while (*str)
+	int	len;
+
+	len = 0;
+	while (str[len])
 	{
-		write(1, str, 1);
-		str++;
+		len++;
 	}
+	return (len);
 }
-
-// int	main(void)
-// {
-// 	char	m[] = "Hello,world!!";
-
-// 	ft_putstr(m);
-// 	return (0);
-// }

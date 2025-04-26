@@ -1,36 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/24 12:17:12 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/25 15:24:18 by kaoki            ###   ########.fr       */
+/*   Created: 2025/04/04 02:17:28 by kaoki             #+#    #+#             */
+/*   Updated: 2025/04/04 02:17:30 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+void	ft_swap(int *a, int *b)
 {
-	int	count;
+	int	temp;
 
-	count = 0;
-	while (*str)
-	{
-		count++;
-		str++;
-	}
-	return (count);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
-
-// #include <stdio.h>
-//  int	main(void)
-//  {
-// 	int		count;
-// 	char	m[] = "HELLO,WORLD!!";
-
-// 	count = 0;
-// 	count = ft_strlen(m);
-// 	printf("%d", count);
-// 	return (0);
-// }

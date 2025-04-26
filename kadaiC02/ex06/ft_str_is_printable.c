@@ -6,7 +6,7 @@
 /*   By: kaoki <kaoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 12:28:54 by kaoki             #+#    #+#             */
-/*   Updated: 2025/03/24 11:53:43 by kaoki            ###   ########.fr       */
+/*   Updated: 2025/04/01 08:55:58 by kaoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ int	ft_str_is_printable(char *str)
 	return (1);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	m[] = "ffwd";
-	int		index;
+// int	main(void)
+// {
+// 	char	m[] = "ffwd";
+// 	int		index;
 
-	index = ft_str_is_printable(m);
-	printf("%d", index);
-	return (0);
-}
+// 	index = ft_str_is_printable(m);
+// 	printf("%d", index);
+// 	return (0);
+// }
