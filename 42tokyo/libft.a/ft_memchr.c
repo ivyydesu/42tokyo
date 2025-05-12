@@ -6,7 +6,7 @@
 /*   By: aokirou <aokirou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 17:26:11 by aokirou           #+#    #+#             */
-/*   Updated: 2025/05/03 17:28:15 by aokirou          ###   ########.fr       */
+/*   Updated: 2025/05/07 18:07:01 by aokirou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-#include <stdio.h>
 
 int	main(void)
 {

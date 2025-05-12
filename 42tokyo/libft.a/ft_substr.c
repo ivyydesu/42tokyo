@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aokirou <aokirou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 17:31:08 by aokirou           #+#    #+#             */
-/*   Updated: 2025/05/03 17:31:38 by aokirou          ###   ########.fr       */
+/*   Created: 2025/05/07 18:19:47 by aokirou           #+#    #+#             */
+/*   Updated: 2025/05/07 18:19:47 by aokirou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+
 char *ft_substr(char const *s, unsigned int start,
-    size_t len)
+    size_t len);
